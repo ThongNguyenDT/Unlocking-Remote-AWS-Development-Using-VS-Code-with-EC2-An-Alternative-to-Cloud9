@@ -1,6 +1,8 @@
 <div align="center">
     <image src="static/images/thumb.png" width=full></image>
-    <H1 >RAG_serverless_genAI</h1>
+    <h1> <span>Unlocking Remote AWS Development</span> <br>
+    <span>Using VS Code with EC2:</span> <br>
+    <span>An Alternative to Cloud9</span></h1>
 </div>
 
 
