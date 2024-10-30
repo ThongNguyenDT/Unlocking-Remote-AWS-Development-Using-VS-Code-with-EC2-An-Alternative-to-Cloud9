@@ -1,0 +1,20 @@
+[
+    {
+        "color": "yellow",
+        "type": "rubber-duck",
+        "size": "nano",
+        "name": "Bé Ý"
+    },
+    {
+        "color": "gray",
+        "type": "totoro",
+        "size": "nano",
+        "name": "An Mập"
+    },
+    {
+        "color": "black",
+        "type": "dog",
+        "size": "nano",
+        "name": "bảo"
+    }
+]

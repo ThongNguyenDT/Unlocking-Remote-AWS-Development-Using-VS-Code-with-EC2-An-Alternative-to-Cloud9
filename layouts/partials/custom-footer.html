@@ -1,0 +1,52 @@
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+  function updateImageSources() {
+    // Select all image elements
+    var images = document.querySelectorAll("img");
+
+    // Loop through each image and update the src attribute
+    images.forEach(function (image) {
+      if (image.src.includes('/images')) {
+        const fullSrc = image.src;
+
+        // Create a URL object
+        const url = new URL(fullSrc);
+        const rootURL = baseurl.replace('//vi/', '')
+        image.src = rootURL.concat(url.pathname);
+      }
+
+    });
+  }
+  document.querySelector("#logo").href = baseurl
+  if (!baseurl.includes("localhost"))
+    updateImageSources();
+
+
+  // let bodyBlock ;
+  // if (document.querySelector("#body-inner > h6 > strong > code")) {
+  //   const idBlock = document.querySelector("#body-inner > h6 > strong > code");
+  //   bodyBlock = idBlock.parentElement.parentElement;
+
+  //   document.querySelector("#body > div.padding.highlightable").style.height = '100vh';
+  //   document.querySelector("#body > div.padding.highlightable").style.overflow = 'hidden';
+
+  //   bodyBlock.parentElement.style.overflowY = 'hidden'
+  //   bodyBlock.innerHTML =
+  //   `
+  //   <div style="margin:0px;padding:0px;overflow:hidden">
+  //     <iframe src="https://notion-embed-iota.vercel.app/Notion_embed/a6c7e54800c245ac948a493efca43e58" frameborder="0" style="overflow:hidden;height:100vh;width:102%"></iframe>
+  //   </div>
+  //   `
+  // }
+
+
+</script>
