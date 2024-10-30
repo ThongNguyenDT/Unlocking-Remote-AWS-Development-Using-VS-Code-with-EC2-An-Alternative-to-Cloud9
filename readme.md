@@ -1,5 +1,5 @@
 <div align="center">
-    <image src="static/images/thumb.png" width=full></image>
+    <image src="Github_page/static/images/thumb.png" width=full></image>
     <h1> <span>Unlocking Remote AWS Development</span> <br>
     <span>Using VS Code with EC2:</span> <br>
     <span>An Alternative to Cloud9</span></h1>
