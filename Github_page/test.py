@@ -12,6 +12,6 @@ def rename_images(folder_path, new_name):
         os.rename(old_path, new_path)
         print(f"Đã đổi tên '{filename}' thành '{new_filename}'")
 
-folder_path = "path/to/your/folder"
-new_name = "image"
+folder_path = "D:\Cloud\cloudfrontdistribution"
+new_name = "cloudfrontdistribution"
 rename_images(folder_path, new_name)
