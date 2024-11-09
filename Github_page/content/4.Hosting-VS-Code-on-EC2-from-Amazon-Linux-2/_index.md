@@ -11,11 +11,11 @@ In this part, we will deploy a web application for VS Code on EC2 from an Amazon
 2. [https://github.com/peteragility/ssm-port-forward](https://github.com/peteragility/ssm-port-forward)
 3. [Installing Amazon Linux 2 on VMware - Step-by-Step Guide (youtube.com)](https://www.youtube.com/watch?v=3hzIwa-q35E&t=29s)
 
-![Untitled](/images/img_sec3/image.png)
+![Untitled](/images/img_sec4/image.png)
 
 ## 3.0. Configure SSH on the AL2 virtual machine
 
-![Untitled](/images/img_sec3/untitled%2052.png)
+![Untitled](/images/img_sec4/untitled%2052.png)
 
 For convenience in typing commands, I configure SSH for the AL2 virtual machine to access from the real computer Terminal.
 
@@ -58,17 +58,17 @@ aws --version
 
 ### Step 1: Install nvm
 
-![Untitled](/images/img_sec3/untitled%2053.png)
+![Untitled](/images/img_sec4/untitled%2053.png)
 
 ### Step 2: Install NodeJS LTS
 
-![Untitled](/images/img_sec3/untitled%2054.png)
+![Untitled](/images/img_sec4/untitled%2054.png)
 
 The installed NodeJS version is 20.16.0.
 
 ### Step 3: Determine the version by command `node -v` then the library is not found
 
-![Untitled](/images/img_sec3/untitled%2055.png)
+![Untitled](/images/img_sec4/untitled%2055.png)
 
 To fix this problem, I refer to the link [node.js - GLIBC_2.27 not found while installing Node on Amazon EC2 instance - Stack Overflow](https://stackoverflow.com/questions/72022527/glibc-2-27-not-found-while-installing-node-on-amazon-ec2-instance), there are 2 solutions:
 
@@ -90,20 +90,20 @@ reference [Install the Session Manager plugin on Amazon Linux 2 and Red Hat Ente
 
 ``` sudo yum install -y https://s3.amazonaws.com/session-manager-downloads/plug in/latest/linux_64bit/session-manager-plugin.rpm ``` 
 
-![Untitled](/images/img_sec3/untitled%2056.png)
+![Untitled](/images/img_sec4/untitled%2056.png)
 
 ### Step 2: Install project 
 
 ``` npm ci ``` 
 
-![Untitled](/images/img_sec3/untitled%2057.png)
+![Untitled](/images/img_sec4/untitled%2057.png)
 ### Step 3: If you have never used CDK before, the Bootstrap process is only necessary for the first time. The following command is not necessary if you have already bootstrapped.
 
 ```
 npx cdk bootstrap
 ```
 
-![Untitled](/images/img_sec3/untitled%2058.png)
+![Untitled](/images/img_sec4/untitled%2058.png)
 
 ### Step 4: Deploy to AWS:
 
@@ -111,70 +111,70 @@ npx cdk bootstrap
 npx cdk deploy
 ```
 
-![Untitled](/images/img_sec3/untitled%2059.png)
+![Untitled](/images/img_sec4/untitled%2059.png)
 
 If asked “Do you wish to deploy these changes?” Enter y 
 
-![Untitled](/images/img_sec3/untitled%2060.png)
+![Untitled](/images/img_sec4/untitled%2060.png)
 
 Wait a few minutes for installation: 
 
-![Untitled](/images/img_sec3/untitled%2061.png)
+![Untitled](/images/img_sec4/untitled%2061.png)
 
 ### (optional): Proceed to observe 
 
-![image.png](/images/img_sec3/image.png)
+![image.png](/images/img_sec4/image.png)
 
-![Untitled](/images/img_sec3/untitled%2062.png)
+![Untitled](/images/img_sec4/untitled%2062.png)
 
 
 ### stack VscodeOnEc2ForPrototypingStack 
 
 Tag Output: 
 
-![Untitled](/images/img_sec3/7d1990f3-5267-4d61-956a-f43a5d2176e1.png)
+![Untitled](/images/img_sec4/7d1990f3-5267-4d61-956a-f43a5d2176e1.png)
 
 Tag Resources: 
 
-![Untitled](/images/img_sec3/ffa21354-6be4-459d-9dff-d82498bf9920.png)
+![Untitled](/images/img_sec4/ffa21354-6be4-459d-9dff-d82498bf9920.png)
 
-![Untitled](/images/img_sec3/untitled%2063.png)
+![Untitled](/images/img_sec4/untitled%2063.png)
 
 ### CDKToolkit stack 
 
 
 ### Tag Outputs 
 
-![Untitled](/images/img_sec3/f87f2199-e440-495e-add9-a1ad2ecc9b9f.png)
+![Untitled](/images/img_sec4/f87f2199-e440-495e-add9-a1ad2ecc9b9f.png)
 
 ### Tag Resources 
 
-![Untitled](/images/img_sec3/c390728e-dae0-4cba-a1da-8b7d6ba49e44.png)
+![Untitled](/images/img_sec4/c390728e-dae0-4cba-a1da-8b7d6ba49e44.png)
 
 Check instance 
 
-![Untitled](/images/img_sec3/untitled%2064.png)
+![Untitled](/images/img_sec4/untitled%2064.png)
 
 Check security group của EC2 instance:
 
-![Untitled](/images/img_sec3/untitled%2065.png)
+![Untitled](/images/img_sec4/untitled%2065.png)
 
 Check IAM instance profile:
 
-![Untitled](/images/img_sec3/untitled%2066.png)
+![Untitled](/images/img_sec4/untitled%2066.png)
 
 
 ### Step 5: Connecting but error 
 
-![Untitled](/images/img_sec3/untitled%2067.png)
+![Untitled](/images/img_sec4/untitled%2067.png)
 
 Cannot connect web app because it only opens at localhost. But if you create a session to connect EC2 using Windows. Refer to https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html#sessions-remote-port-forwarding
 
-![Untitled](/images/img_sec3/untitled%2068.png)
+![Untitled](/images/img_sec4/untitled%2068.png)
 
 Tada:
 
-![Untitled](/images/img_sec3/untitled%2069.png)
+![Untitled](/images/img_sec4/untitled%2069.png)
 
 ## 3.4. Demo network performance:
 
@@ -182,10 +182,10 @@ Tada:
 
 ## 3.5. Cleanup:
 
-![Untitled](/images/img_sec3/untitled%2070.png)
+![Untitled](/images/img_sec4/untitled%2070.png)
 
 Wait a few minutes:
 
-![Untitled](/images/img_sec3/untitled%2071.png)
+![Untitled](/images/img_sec4/untitled%2071.png)
 
 Go to S3 Console to delete the created S3 bucket (name starts with cdk-hnb)

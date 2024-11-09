@@ -12,11 +12,11 @@ Phần này ta sẽ triển khai 1 ứng dụng web cho VS Code trên EC2 từ m
 2. [https://github.com/peteragility/ssm-port-forward](https://github.com/peteragility/ssm-port-forward)
 3. [Installing Amazon Linux 2 on VMware - Step-by-Step Guide (youtube.com)](https://www.youtube.com/watch?v=3hzIwa-q35E&t=29s)
 
-![Untitled](/images/img_sec3/image.png)
+![Untitled](/images/img_sec4/image.png)
 
 ## 3.0. Cấu hình SSH trên máy ảo AL2
 
-![Untitled](/images/img_sec3/untitled%2052.png)
+![Untitled](/images/img_sec4/untitled%2052.png)
 
 Cho thuận tiện trong việc gõ lệnh, mình cấu hình SSH cho máy ảo AL2 để truy cập từ Terminal máy tính thật.
 
@@ -58,17 +58,17 @@ aws --version
 
 ### Bước 1: Cài nvm
 
-![Untitled](/images/img_sec3/untitled%2053.png)
+![Untitled](/images/img_sec4/untitled%2053.png)
 
 ### Bước 2: Cài NodeJS LTS
 
-![Untitled](/images/img_sec3/untitled%2054.png)
+![Untitled](/images/img_sec4/untitled%2054.png)
 
 Phiên bản NodeJS đã cài là 20.16.0.
 
 ### Bước 3: Xác định phiên bản bằng lệnh `node -v` thì lỗi không thấy thư viện
 
-![Untitled](/images/img_sec3/untitled%2055.png)
+![Untitled](/images/img_sec4/untitled%2055.png)
 
 Để khắc phục vấn đề này, mình tham khảo link [node.js - GLIBC_2.27 not found while installing Node on Amazon EC2 instance - Stack Overflow](https://stackoverflow.com/questions/72022527/glibc-2-27-not-found-while-installing-node-on-amazon-ec2-instance), có 2 giải pháp:
 
@@ -92,7 +92,7 @@ tham khảo [Install the Session Manager plugin on Amazon Linux 2 and Red Hat En
 sudo yum install -y [https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm](https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm)
 ```
 
-![Untitled](/images/img_sec3/untitled%2056.png)
+![Untitled](/images/img_sec4/untitled%2056.png)
 
 ### Bước 2: Cài đặt project
 
@@ -100,7 +100,7 @@ sudo yum install -y [https://s3.amazonaws.com/session-manager-downloads/plugin/l
 npm ci
 ```
 
-![Untitled](/images/img_sec3/untitled%2057.png)
+![Untitled](/images/img_sec4/untitled%2057.png)
 
 ### Bước 3: Nếu chưa từng sử dụng CDK trước đây, quy trình Bootstrap chỉ cần thiết cho lần đầu tiên. Lệnh sau không cần thiết nếu đã bootstrap.
 
@@ -108,7 +108,7 @@ npm ci
 npx cdk bootstrap
 ```
 
-![Untitled](/images/img_sec3/untitled%2058.png)
+![Untitled](/images/img_sec4/untitled%2058.png)
 
 ### Bước 4: Triển khai lên AWS:
 
@@ -116,67 +116,67 @@ npx cdk bootstrap
 npx cdk deploy
 ```
 
-![Untitled](/images/img_sec3/untitled%2059.png)
+![Untitled](/images/img_sec4/untitled%2059.png)
 
 Nếu được hỏi “Do you wish to deploy these changes?” Nhập y
 
-![Untitled](/images/img_sec3/untitled%2060.png)
+![Untitled](/images/img_sec4/untitled%2060.png)
 
 Chờ vài phút để cài đặt:
 
-![Untitled](/images/img_sec3/untitled%2061.png)
+![Untitled](/images/img_sec4/untitled%2061.png)
 
 ### (phụ): Tiến hành quan sát
 
-![image.png](/images/img_sec3/image.png)
+![image.png](/images/img_sec4/image.png)
 
-![Untitled](/images/img_sec3/untitled%2062.png)
+![Untitled](/images/img_sec4/untitled%2062.png)
 
 ### stack VscodeOnEc2ForPrototypingStack
 
 Tag Output:
 
-![Untitled](/images/img_sec3/7d1990f3-5267-4d61-956a-f43a5d2176e1.png)
+![Untitled](/images/img_sec4/7d1990f3-5267-4d61-956a-f43a5d2176e1.png)
 
 Tag Resources:
 
-![Untitled](/images/img_sec3/ffa21354-6be4-459d-9dff-d82498bf9920.png)
+![Untitled](/images/img_sec4/ffa21354-6be4-459d-9dff-d82498bf9920.png)
 
-![Untitled](/images/img_sec3/untitled%2063.png)
+![Untitled](/images/img_sec4/untitled%2063.png)
 
 ### CDKToolkit stack
 
 ### Tag Outputs
 
-![Untitled](/images/img_sec3/f87f2199-e440-495e-add9-a1ad2ecc9b9f.png)
+![Untitled](/images/img_sec4/f87f2199-e440-495e-add9-a1ad2ecc9b9f.png)
 
 ### Tag Resources
 
-![Untitled](/images/img_sec3/c390728e-dae0-4cba-a1da-8b7d6ba49e44.png)
+![Untitled](/images/img_sec4/c390728e-dae0-4cba-a1da-8b7d6ba49e44.png)
 
 Check instance
 
-![Untitled](/images/img_sec3/untitled%2064.png)
+![Untitled](/images/img_sec4/untitled%2064.png)
 
 Check security group của EC2 instance:
 
-![Untitled](/images/img_sec3/untitled%2065.png)
+![Untitled](/images/img_sec4/untitled%2065.png)
 
 Check IAM instance profile:
 
-![Untitled](/images/img_sec3/untitled%2066.png)
+![Untitled](/images/img_sec4/untitled%2066.png)
 
 ### Bước 5: Kết nối nhưng lỗi
 
-![Untitled](/images/img_sec3/untitled%2067.png)
+![Untitled](/images/img_sec4/untitled%2067.png)
 
 Không thể kết nối web app do chỉ mở ở localhost. Nhưng nếu tạo session kết nối EC2 bằng Windows. Tham khảo [https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html#sessions-remote-port-forwarding](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html#sessions-remote-port-forwarding)
 
-![Untitled](/images/img_sec3/untitled%2068.png)
+![Untitled](/images/img_sec4/untitled%2068.png)
 
 Tada:
 
-![Untitled](/images/img_sec3/untitled%2069.png)
+![Untitled](/images/img_sec4/untitled%2069.png)
 
 ## 3.4. Demo network performance:
 
@@ -184,10 +184,10 @@ Tada:
 
 ## 3.5. Cleanup:
 
-![Untitled](/images/img_sec3/untitled%2070.png)
+![Untitled](/images/img_sec4/untitled%2070.png)
 
 Chờ vài phút:
 
-![Untitled](/images/img_sec3/untitled%2071.png)
+![Untitled](/images/img_sec4/untitled%2071.png)
 
 Vào S3 Console để xóa S3 bucket đã tạo (tên bắt đầu là cdk-hnb)
