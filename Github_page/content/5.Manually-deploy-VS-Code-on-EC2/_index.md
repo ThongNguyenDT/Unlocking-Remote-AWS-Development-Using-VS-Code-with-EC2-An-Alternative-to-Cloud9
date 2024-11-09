@@ -7,7 +7,7 @@ pre : " <b> 5. </b> "
 ---
 (extended from section 4, no need to use CDK)
 
-![image.png](/images/img_sec3/image.png)
+![image.png](/images/img_sec5/image.png)
 
 ## 5.1. Environment setup
 
@@ -21,14 +21,14 @@ Requirements:
 
 For convenience, I use the “VPC and more” feature in “Create VPC”:
 
-![Untitled](/images/img_sec3/untitled%2072.png)
+![Untitled](/images/img_sec5/untitled%2072.png)
 Resource map:
 
-![Untitled](/images/img_sec3/untitled%2073.png)
+![Untitled](/images/img_sec5/untitled%2073.png)
 
 Result:
 
-![Untitled](/images/img_sec3/untitled%2074.png)
+![Untitled](/images/img_sec5/untitled%2074.png)
 
 ### 5.1.2. Create Role and Policy for SSM
 
@@ -56,13 +56,13 @@ Create a JSON Policy, can be named VSCodeBastionHostInstanceRoleDefaultPolicy
 
 Result:
 
-![Untitled](/images/img_sec3/untitled%2075.png)
+![Untitled](/images/img_sec5/untitled%2075.png)
 
 ### Step 2: Create a role and add the newly created policy to the role
 
 Name the role as VscodeOnEc2ForPrototyping
 
-![Untitled](/images/img_sec3/untitled%2076.png)
+![Untitled](/images/img_sec5/untitled%2076.png)
 
 Role used for IAM instance profile
 
@@ -72,9 +72,9 @@ If your EC2 instance is not a public application, then according to best practic
 
 Name the security group VSC-SG
 
-![Untitled](/images/img_sec3/untitled%2077.png)
+![Untitled](/images/img_sec5/untitled%2077.png)
 
-![Untitled](/images/img_sec3/untitled%2078.png)
+![Untitled](/images/img_sec5/untitled%2078.png)
 
 ## 5.2 Deployment
 
@@ -82,7 +82,7 @@ Name the security group VSC-SG
 
 ### Step 1: Select AMI as Amazon Linux 2023, instance type as t3.medium
 
-![Untitled](/images/img_sec3/untitled%2079.png)
+![Untitled](/images/img_sec5/untitled%2079.png)
 
 ### Step 2: Select the newly created VPC → any private subnet
 
@@ -90,15 +90,15 @@ Name the security group VSC-SG
 
 ### Step 4: Select security group VSC-SG
 
-![Untitled](/images/img_sec3/untitled%2081.png)
+![Untitled](/images/img_sec5/untitled%2081.png)
 
 ### Step 5: Configure volume 100GB
 
-![Untitled](/images/img_sec3/untitled%2081.png)
+![Untitled](/images/img_sec5/untitled%2081.png)
 
 ### Step 6: Select IAM instance profile named “VscodeOnEc2ForPrototyping” created from before 
 
-![Untitled](/images/img_sec3/untitled%2082.png)
+![Untitled](/images/img_sec5/untitled%2082.png)
 
 ### Step 7: In user-data section, paste the following code: 
 
@@ -149,17 +149,17 @@ Purpose: deploy VS-Code on web port 8080 of EC2 instance
 
 After a few minutes, make sure the instance has been successfully initialized
 
-![Untitled](/images/img_sec3/untitled%2083.png)
+![Untitled](/images/img_sec5/untitled%2083.png)
 
 ### Step 9: Connect to the instance by selecting Connect → Session Manager
 
 Make sure SSM agent has been installed by connecting to the instance via Session Manager
 
-![Untitled](/images/img_sec3/untitled%2084.png)
+![Untitled](/images/img_sec5/untitled%2084.png)
 
 When the configuration is successful:
 
-![Untitled](/images/img_sec3/untitled%2085.png)
+![Untitled](/images/img_sec5/untitled%2085.png)
 
 ### Step 10: Check the web app has been deployed successfully with the command
 
@@ -169,7 +169,7 @@ curl localhost:8080
 
 Once the web has been deployed, we can get the resources of the page open on the port 8080: 
 
-![Untitled](/images/img_sec3/untitled%2086.png)
+![Untitled](/images/img_sec5/untitled%2086.png)
 
 ### 5.2.2. Access VS Code deployed on EC2 from SSM via port forwarding
 
@@ -184,7 +184,7 @@ aws ssm start-session \
 --parameters '{"host":["<Private- IP>"],"portNumber":["8080"], "localPortNumber":["8080"]}'
 ```
 
-![Untitled](/images/img_sec3/untitled%2087.png)
+![Untitled](/images/img_sec5/untitled%2087.png)
 
 ### Connect from Windows:
 
@@ -196,10 +196,10 @@ aws ssm start-session ^
 ```
 
 
-![Untitled](/images/img_sec3/untitled%2088.png)
+![Untitled](/images/img_sec5/untitled%2088.png)
 
 At this time, access [localhost:8080](http://localhost:8080) on the browser: 
 
-![Untitled](/images/img_sec3/untitled%2089.png)
+![Untitled](/images/img_sec5/untitled%2089.png)
 
 Check the performance: [Youtube link](https://youtu.be/6DxtEsX6gvY)

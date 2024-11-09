@@ -8,7 +8,7 @@ pre : " <b> 5. </b> "
 
 (mở rộng của mục 3: không cần dùng CDK)
 
-![image.png](/images/img_sec3/image.png)
+![image.png](/images/img_sec5/image.png)
 
 ## 5.1. Cài đặt môi trường
 
@@ -22,15 +22,15 @@ Yêu cầu:
 
 Để tiện thì mình dùng tính năng “VPC and more” trong “Create VPC”:
 
-![Untitled](/images/img_sec3/untitled%2072.png)
+![Untitled](/images/img_sec5/untitled%2072.png)
 
 Resource map:
 
-![Untitled](/images/img_sec3/untitled%2073.png)
+![Untitled](/images/img_sec5/untitled%2073.png)
 
 Kết quả:
 
-![Untitled](/images/img_sec3/untitled%2074.png)
+![Untitled](/images/img_sec5/untitled%2074.png)
 
 ### 5.1.2. Tạo Role và Policy cho SSM
 
@@ -58,13 +58,13 @@ Tạo Policy dạng JSON, có thể đặt tên là VSCodeBastionHostInstanceRol
 
 Kết quả:
 
-![Untitled](/images/img_sec3/untitled%2075.png)
+![Untitled](/images/img_sec5/untitled%2075.png)
 
 ### Bước 2: Tạo role và thêm policy vừa tạo vào role
 
 Đặt tên role là VscodeOnEc2ForPrototyping
 
-![Untitled](/images/img_sec3/untitled%2076.png)
+![Untitled](/images/img_sec5/untitled%2076.png)
 
 Role được dùng cho IAM instance profile
 
@@ -74,9 +74,9 @@ Nếu EC2 instance của bạn không phải một ứng dụng công khai, thì
 
 Đặt tên security group là VSC-SG
 
-![Untitled](/images/img_sec3/untitled%2077.png)
+![Untitled](/images/img_sec5/untitled%2077.png)
 
-![Untitled](/images/img_sec3/untitled%2078.png)
+![Untitled](/images/img_sec5/untitled%2078.png)
 
 ## 5.2 Triển khai
 
@@ -84,7 +84,7 @@ Nếu EC2 instance của bạn không phải một ứng dụng công khai, thì
 
 ### Bước 1: Chọn AMI là Amazon Linux 2023, instance type là t3.medium
 
-![Untitled](/images/img_sec3/untitled%2079.png)
+![Untitled](/images/img_sec5/untitled%2079.png)
 
 ### Bước 2: Chọn VPC vừa tạo → private subnet bất kỳ
 
@@ -92,17 +92,17 @@ Nếu EC2 instance của bạn không phải một ứng dụng công khai, thì
 
 ### Bước 4: Chọn security group VSC-SG
 
-![Untitled](/images/img_sec3/untitled%2080.png)
+![Untitled](/images/img_sec5/untitled%2080.png)
 
 ### **Chọn AMI là Amazon Linux 2023, instance type là t3.medium**
 
 ## Bước 5: Cấu hình volume 100GB
 
-![Untitled](/images/img_sec3/untitled%2081.png)
+![Untitled](/images/img_sec5/untitled%2081.png)
 
 ### Bước 6: Chọn IAM instance profile tên “VscodeOnEc2ForPrototyping” đã tạo từ trước
 
-![Untitled](/images/img_sec3/untitled%2082.png)
+![Untitled](/images/img_sec5/untitled%2082.png)
 
 ### Bước 7: Mục user-data, dán đoạn code sau:
 
@@ -153,17 +153,17 @@ Mục đích: triển khai VS-Code trên web port 8080 của EC2 instance
 
 Sau vài phút, đảm bảo rằng instance đã được khởi tạo thành công
 
-![Untitled](/images/img_sec3/untitled%2083.png)
+![Untitled](/images/img_sec5/untitled%2083.png)
 
 ### Bước 9: Kết nối instance bằng việc chọn Connect → Session Manager
 
 Đảm bảo SSM agent đã được cài đặt bằng cách kết nối vào instance qua Session Manager
 
-![Untitled](/images/img_sec3/untitled%2084.png)
+![Untitled](/images/img_sec5/untitled%2084.png)
 
 Khi cấu hình thành công:
 
-![Untitled](/images/img_sec3/untitled%2085.png)
+![Untitled](/images/img_sec5/untitled%2085.png)
 
 ### Bước 10: Kiểm tra web app đã triển khai thành công bằng lệnh
 
@@ -175,7 +175,7 @@ curl localhost:8080
 
 Khi web đã triển khai, ta có thể lấy được tài nguyên của trang đang mở trên port 8080:
 
-![Untitled](/images/img_sec3/untitled%2086.png)
+![Untitled](/images/img_sec5/untitled%2086.png)
 
 ### 5.2.2. Truy cập VS Code triển khai trên EC2 từ SSM qua port forwarding
 
@@ -190,7 +190,7 @@ aws ssm start-session \
     --parameters '{"host":["<Private-IP>"],"portNumber":["8080"], "localPortNumber":["8080"]}'
 ```
 
-![Untitled](/images/img_sec3/untitled%2087.png)
+![Untitled](/images/img_sec5/untitled%2087.png)
 
 ### Kết nối từ Windows:
 
@@ -201,11 +201,11 @@ aws ssm start-session ^
     --parameters host="<Private-IP>",portNumber="8080",localPortNumber="8080"
 ```
 
-![Untitled](/images/img_sec3/untitled%2088.png)
+![Untitled](/images/img_sec5/untitled%2088.png)
 
 Khi này, truy cập [localhost:8080](http://localhost:8080) trên browser:
 
-![Untitled](/images/img_sec3/untitled%2089.png)
+![Untitled](/images/img_sec5/untitled%2089.png)
 
 Kiểm tra performace:
 
