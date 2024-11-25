@@ -3,14 +3,18 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="../Images/EC2-Instance-Connect/Light-Architecture.png width=full">
       <source media="(prefers-color-scheme: light)" srcset="../Images/EC2-Instance-Connect/Dark-Architecture.png width=full">
-      <image alt="Shows a black logo in light color mode and a white one in dark color mode." src="../Images/EC2-Instance-Connect/Dark-Architecture.png" width=500></image>
+      <image alt="Shows a black logo in light color mode and a white one in dark color mode." src="../Images/EC2-Instance-Connect/Dark-Architecture.png" width=800></image>
     </picture>
     <h1> 🚀 EC2 Instance Connect via VSCode & CLI  </h1>
 </div>
 
-![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazon-aws&logoColor=white) [![GitHub](https://img.shields.io/github/license/your-repo/license)](LICENSE) [![Deploy on GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue)](https://your-repo.github.io)  
+![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazon-aws&logoColor=white) [![GitHub](https://img.shields.io/github/license/ThongNguyenDT/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9?color=red)](LICENSE) [![Deploy on GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue)](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/3.ec2_instance_connect/)  
 
 A step-by-step guide to setting up an **SSH connection** from VSCode to an EC2 instance in a **private subnet**, using **EC2 Instance Connect Endpoint**.
+
+---
+
+### 🌐 [Detailed Guide on GitHub Pages](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/3.ec2_instance_connect/)
 
 ---
 
@@ -110,10 +114,7 @@ Host EC2_Instance_Connect_Endpoint
 ### 🛠 Open VSCode:  
 1. Install the **Remote - SSH** extension.  
 2. Use the **Remote Explorer** panel to connect to your EC2 instance via the configured SSH tunnel.
-
----
-
-### 🌐 [Detailed Deploy Guide on GitHub Pages](https://your-repo.github.io)  
+ 
 
 ---
 
