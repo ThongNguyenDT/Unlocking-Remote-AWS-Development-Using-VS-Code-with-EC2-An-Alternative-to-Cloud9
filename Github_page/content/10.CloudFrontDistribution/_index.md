@@ -1,9 +1,9 @@
 ---
 title: "Hosting Code Server on EC2 and CloudFront Distribution"
 date :  "`r Sys.Date()`" 
-weight : 10
+weight : 9
 chapter : false
-pre : " <b> 10. </b> "
+pre : " <b> 9. </b> "
 ---
 
 
