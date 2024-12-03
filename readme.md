@@ -1,11 +1,22 @@
-<div align="center">
-    <image src="Github_page/static/images/thumb.png" width=full></image>
-    <h1> <span>Unlocking Remote AWS Development</span> <br>
-    <span>Using VS Code with EC2:</span> <br>
-    <span>An Alternative to Cloud9</span></h1>
-</div>
+# Host VSCode from AMI from EC2 Image Builder 🚀
 
+## 🌟 Overview
 
-![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazon-aws&logoColor=white) ![Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?logo=aws-lambda&logoColor=white) ![API Gateway](https://img.shields.io/badge/AWS%20API%20Gateway-FF4B00?logo=amazon-api-gateway&logoColor=white) ![Cognito](https://img.shields.io/badge/AWS%20Cognito-FF4B00?logo=aws-cognito&logoColor=white) ![Amplify](https://img.shields.io/badge/AWS%20Amplify-FF4B00?logo=aws-amplify&logoColor=white)
+EC2 Image Builder automates the creation, management, and deployment of customized, secure, and up-to-date “golden” AMIs that are pre-installed and pre-configured with software and settings.
 
+In this section, we will build an AMI similar to last section, but using EC2 Image Builder to create an image pipeline from infrastructure configuration (OS, VPC, subnet, security group), IAM instance profile, to installing the AMI, deploying it to an instance, testing the state of that instance, and scanning for security vulnerabilities in the ami.
 
+## ✨ Key Features
+
+- Pre-configured VS Code Server environment 
+- Image pipeline
+- Easy to develop and maintain
+
+## 🏗️ Architecture
+
+The solution deploys:
+- Image pipeline with EC2 Image Builder
+- EC2 instance running Code Server from the image created by Image Builder
+- Security groups and IAM roles 
+- VPC networking components (optional)
+- SSM Session Manager port forwarding
