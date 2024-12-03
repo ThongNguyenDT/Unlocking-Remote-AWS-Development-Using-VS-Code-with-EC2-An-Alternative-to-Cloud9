@@ -1,4 +1,4 @@
-# Code Server Setup with CloudFormation 🚀
+# Code Server Setup with CDK 🚀
 
 ## 🌟 Overview
 
