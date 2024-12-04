@@ -9,19 +9,10 @@ A comprehensive guide to deploying VS Code Server on AWS using CloudFormation wi
 ---
 
 ## 📑 Table of Contents
-- [📑 Table of Contents](#-table-of-contents)
-- [1️⃣ Create VPC Infrastructure](#1️⃣-create-vpc-infrastructure)
-  - [🌐 Requirements:](#-requirements)
-  - [🛠 Steps:](#-steps)
-- [2️⃣ Deploy CloudFormation Stack](#2️⃣-deploy-cloudformation-stack)
-  - [📋 Region Support:](#-region-support)
-  - [🚀 Deployment Steps:](#-deployment-steps)
-- [3️⃣ Configure AWS CLI \& Tools](#3️⃣-configure-aws-cli--tools)
-  - [⚙️ AWS CLI Setup:](#️-aws-cli-setup)
-  - [🔧 Session Manager Plugin:](#-session-manager-plugin)
-- [4️⃣ Access VS Code Server](#4️⃣-access-vs-code-server)
-  - [🔄 Port Forwarding:](#-port-forwarding)
-  - [🌐 Verification:](#-verification)
+1. [Create VPC Infrastructure](#1-create-vpc-infrastructure)
+2. [Deploy CloudFormation Stack](#2-deploy-cloudformation-stack)
+3. [Configure AWS CLI & Tools](#3-configure-aws-cli--tools)
+4. [Access VS Code Server](#4-access-vs-code-server)
 
 ---
 
