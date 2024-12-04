@@ -4,7 +4,7 @@
       <source media="(prefers-color-scheme: light)" srcset="../Images/SSM-Manager/Dark-Architecture.png width=full">
       <image alt="Shows a black logo in light color mode and a white one in dark color mode." src="../Images/SSM-Manager/Dark-Architecture.png" width=800></image>
     </picture>
-    <h1> 🌟 EC2 Instance SSH Guide via SSM - GitHub README 🌟 </h1>
+    <h1> 🌟 EC2 Instance SSH Guide via SSM 🌟 </h1>
 </div>
 
 ![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazon-aws&logoColor=white) [![GitHub](https://img.shields.io/github/license/ThongNguyenDT/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9?color=red)](LICENSE) [![Deploy on GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue)](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/3.ec2_instance_connect/)  
@@ -42,8 +42,6 @@ To connect to an EC2 instance in a private subnet:
 1. **Navigate to the VPC Console**:  
    - Go to the **Endpoints** tab.  
    - Click **Create Endpoints**.  
-
-   ![Step 1 Screenshot](https://your-image-link.com/step1.png)  
 
 2. **Create Three Endpoints**:  
    - `com.amazonaws.<region>.ssm`  
@@ -84,8 +82,6 @@ To connect to an EC2 instance in a private subnet:
 2. Look for the **Session Manager** tab.  
 3. Click the **Connect** button.  
 
-![Session Manager Connection](https://your-image-link.com/step3.png)  
-
 If unsuccessful:  
 - Verify **security group** settings.  
 - Ensure the EC2 instance has the **SSM Agent installed**.  
@@ -112,8 +108,6 @@ If unsuccessful:
 aws ssm start-session --target <instance_id>
 ```  
 
-![CLI Connection Screenshot](https://your-image-link.com/step4.png)  
-
 ---
 
 ## 💻 Step 5: Configure VSCode  
@@ -131,7 +125,7 @@ aws ssm start-session --target <instance_id>
 
 2. **Connect via Remote-SSH in VSCode**.  
 
-For public instance configuration, [click here](https://your-github-pages-link.com/docs/2).  
+For public instance configuration, [click here](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/8.ssm-connect/).  
 
 ---
 
@@ -143,7 +137,7 @@ For public instance configuration, [click here](https://your-github-pages-link.c
 **Q: Why can't I see the Connect button?**  
 - Ensure IAM role and endpoint settings are correct.  
 
-[📖 Full Documentation Here](https://your-github-pages-link.com)  
+[📖 Full Documentation Here](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/8.ssm-connect/)  
 
 ---
 
