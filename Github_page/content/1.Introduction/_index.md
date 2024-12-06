@@ -24,11 +24,11 @@ This approach allows you to learn step-by-step, adapting solutions to fit your s
 
 1. **[Introduction](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/1.introduction/)**: Understand the prerequisites and set up your environment for working with EC2 and VS Code.
 
-2. **[Remote SSH Extension](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/2.Remote-SSH)**: Learn how to use VS Code's *Remote SSH* extension to connect directly to EC2 instances.
+2. **[Remote SSH Extension](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/2.remote-ssh/)**: Learn how to use VS Code's *Remote SSH* extension to connect directly to EC2 instances.
 
 3. **[Connecting VS Code to a Private EC2 via Instance Connect Endpoint](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/3.ec2_instance_connect/)**: Configure and use AWS Instance Connect Endpoint to establish secure connections to private EC2 instances.
 
-4. **[Hosting VS Code on Amazon Linux 2](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/4.Hosting-VS-Code-on-EC2-from-Amazon-Linux-2)**: Host a web-accessible version of VS Code on an Amazon Linux 2 EC2 instance.
+4. **[Hosting VS Code on Amazon Linux 2](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/4.hosting-vs-code-on-ec2-from-amazon-linux-2/)**: Host a web-accessible version of VS Code on an Amazon Linux 2 EC2 instance.
 
 5. **[Manual Deployment of VS Code on EC2](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/5.manually-deploy-vs-code-on-ec2/)**: Manually install and configure VS Code or Code Server on an EC2 instance for development.
 
