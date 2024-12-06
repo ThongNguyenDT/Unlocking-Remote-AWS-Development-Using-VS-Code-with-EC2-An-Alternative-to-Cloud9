@@ -136,5 +136,4 @@ The **Remote-SSH Extension** allows you to:
 ---
 
 ## 🌟 **Ready to Explore?**
-Head over to the **[Deployed Guide](https://your-deployment-url.github.io)** for an interactive experience! 🎉
-```
+Head over to the **[Deployed Guide](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/2.remote-ssh/)** for an interactive experience! 🎉
