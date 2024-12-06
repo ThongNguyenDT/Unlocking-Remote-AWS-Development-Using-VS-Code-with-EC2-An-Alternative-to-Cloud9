@@ -1,5 +1,5 @@
 ---
-title : "Hosting VS Code on EC2 from Amazon Linux 2"
+title : "Hosting VS Code on EC2 from Amazon Linux 2 with CDK"
 date : "`r Sys.Date()`"
 weight : 4
 chapter : false
