@@ -28,7 +28,7 @@ Welcome to the **"Unlocking Remote AWS Development Using VS Code with EC2"** pro
 1. **Introduction**  
 2. **Remote SSH Extension**  
 3. **Connecting VS Code to a Private EC2 via Instance Connect Endpoint**  
-4. **Hosting VS Code on EC2 from Amazon Linux 2**  
+4. **Hosting VS Code on EC2 from Amazon Linux 2 with CDK**  
 5. **Manually Deploy VS Code on EC2**  
 6. **Create AMI from Instance and Run Instances from That AMI**  
 7. **Host VS Code from AMI Built with EC2 Image Builder**  
