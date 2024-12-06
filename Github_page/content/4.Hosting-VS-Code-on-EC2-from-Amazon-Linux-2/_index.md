@@ -82,15 +82,23 @@ nvm install 16.0.0
 
 The stack overflow link above will lead to the link [glibc 2.27+ on Amazon Linux 2 | AWS re:Post (repost.aws)](https://repost.aws/questions/QUrXOioL46RcCnFGyELJWKLw/glibc-2-27-on-amazon-linux-2). Accordingly, we know that upgrading the version is not possible, and downgrading NodeJS will be at risk of missing supporting libraries whenever the web app deployed behind is upgraded.
 
-## 3.3. Install session-manager plugin 
+## 3.3. Deploy project with CDK
 
 reference [Install the Session Manager plugin on Amazon Linux 2 and Red Hat Enterprise Linux distributions - AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-linux.html) 
 
-### Step 1: Install session-manager-plugin 
+### Requirement: first install session-managuer-plugin
 
-``` sudo yum install -y https://s3.amazonaws.com/session-manager-downloads/plug in/latest/linux_64bit/session-manager-plugin.rpm ``` 
+```
+sudo yum install -y [https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm](https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm)
+```
 
 ![Untitled](/images/img_sec4/untitled%2056.png)
+
+### Step 1: clone the source code and move the working directory there
+
+```
+git clone https://github.com/aws-samples/vscode-on-ec2-for-prototyping && cd vscode-on-ec2-for-prototyping
+```
 
 ### Step 2: Install project 
 
