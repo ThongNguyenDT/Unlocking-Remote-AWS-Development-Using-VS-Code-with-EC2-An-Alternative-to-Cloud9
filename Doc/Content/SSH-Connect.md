@@ -42,8 +42,6 @@ SSH replaces insecure protocols like Telnet and Rlogin by providing a secure cha
   ssh -i <private_key> username@hostname
   ```
 
-![Purpose of SSH](/images/part1/1-1.2-ssh.jpeg)
-
 ---
 
 ## 💻 **Remote-SSH Extension in VSCode**
@@ -51,8 +49,6 @@ The **Remote-SSH Extension** allows you to:
 - Develop directly on remote systems with SSH.
 - Debug apps running on remote hosts or cloud environments.
 - Eliminate local dependencies while working remotely.
-
-![VSCode SSH Extension](/images/part1/1-1.3-extension.png)
 
 ---
 
@@ -63,7 +59,6 @@ The **Remote-SSH Extension** allows you to:
 2. Select **Create VPC** and follow the prompts.
 3. After creation, click **View VPC** to verify.
 
-![Create VPC](/images/part1/1-1.4-step1-3.png)
 
 ---
 
@@ -71,7 +66,6 @@ The **Remote-SSH Extension** allows you to:
 - Search for **EC2** in the AWS search bar.
 - Click **Launch Instance** to begin EC2 setup.
 
-![Navigate to EC2](/images/part1/1-1.4-step2-1.png)
 
 ---
 
@@ -91,8 +85,6 @@ The **Remote-SSH Extension** allows you to:
 4. **Launch Instance**:
    - Click **Launch** and verify.
 
-![Initialize EC2](/images/part1/1-1.4-step3-8.png)
-
 ---
 
 ## 📂 **Configuring Command Prompt with EC2**
@@ -105,7 +97,6 @@ The **Remote-SSH Extension** allows you to:
 
 2. Confirm the `.pem` file exists in the folder.
 
-![Command Prompt](/images/part1/1-1.5-step1-2.png)
 
 ---
 
@@ -117,8 +108,6 @@ The **Remote-SSH Extension** allows you to:
 
 2. Paste it into the terminal and type `yes` to confirm.
 
-![SSH Command](/images/part1/1-1.5-step2-3.png)
-
 ---
 
 ## 🖥️ **Configuring VSCode with EC2**
@@ -128,7 +117,6 @@ The **Remote-SSH Extension** allows you to:
 
 2. Click the **Remote-SSH Icon** in the bottom-left corner.
 
-![Remote-SSH Icon](/images/part1/1-1.6-2.png)
 
 ---
 
@@ -144,7 +132,6 @@ The **Remote-SSH Extension** allows you to:
 
 3. Click **Connect to Host** and choose `remote-connection`.
 
-![Add SSH Host](/images/part1/1-1.6-6.png)
 
 ---
 
