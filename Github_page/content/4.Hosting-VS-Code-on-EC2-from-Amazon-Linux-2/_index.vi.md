@@ -82,7 +82,7 @@ nvm install 16.0.0
 
 Từ link stack overflow trên sẽ dẫn tới link [glibc 2.27+ on Amazon Linux 2 | AWS re:Post (repost.aws)](https://repost.aws/questions/QUrXOioL46RcCnFGyELJWKLw/glibc-2-27-on-amazon-linux-2). Theo đó, ta biết việc nâng cấp phiên bản là không thể, mà downgrade NodeJS sẽ có thể gặp rủi ro thiếu thư viện hỗ trợ bất cứ khi nào web app triển khai ở phía sau được nâng cấp.
 
-## 3.3. Cài session-manager plugin
+## 3.3. Triển khai dự án với CDK
 
 tham khảo [Install the Session Manager plugin on Amazon Linux 2 and Red Hat Enterprise Linux distributions - AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-linux.html))
 
