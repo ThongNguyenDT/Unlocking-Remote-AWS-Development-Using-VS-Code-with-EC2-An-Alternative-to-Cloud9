@@ -5,7 +5,6 @@
     <span>An Alternative to Cloud9</span></h1>
 </div>
 
-
 ![AWS](https://img.shields.io/badge/AWS-orange?logo=amazon-aws&logoColor=white)
 ![AWS EC2](https://img.shields.io/badge/AWS%20EC2-blue?logo=amazon-aws&logoColor=white)
 ![AWS VPC](https://img.shields.io/badge/AWS%20VPC-green?logo=amazon-aws&logoColor=white)
