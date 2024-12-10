@@ -26,23 +26,23 @@ Cách tiếp cận này giúp bạn học theo từng bước, áp dụng các g
 
 ### Tổng Quan Về Các Thử Thách  
 
-1. **[Giới Thiệu](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/1.introduction/)** Hiểu rõ các yêu cầu và thiết lập môi trường để làm việc với EC2 và VS Code.
+1. **[Giới Thiệu](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/1.introduction/)** Hiểu rõ các yêu cầu và thiết lập môi trường để làm việc với EC2 và VS Code.
 
-2. **[Sử Dụng Remote SSH Extension](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/2.Remote-SSH)** Tìm hiểu cách sử dụng tiện ích mở rộng *Remote SSH* của VS Code để kết nối trực tiếp với các instance EC2.
+2. **[Sử Dụng Remote SSH Extension](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/2.remote-ssh/)** Tìm hiểu cách sử dụng tiện ích mở rộng *Remote SSH* của VS Code để kết nối trực tiếp với các instance EC2.
 
-3. **[Kết Nối VS Code với EC2 Riêng qua Instance Connect Endpoint](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/3.ec2_instance_connect/)** Cấu hình và sử dụng AWS Instance Connect Endpoint để kết nối an toàn với các instance EC2 riêng tư.
+3. **[Kết Nối VS Code với EC2 Riêng qua Instance Connect Endpoint](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/3.ec2_instance_connect/)** Cấu hình và sử dụng AWS Instance Connect Endpoint để kết nối an toàn với các instance EC2 riêng tư.
 
-4. **[Triển Khai VS Code trên Amazon Linux 2](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/4.Hosting-VS-Code-on-EC2-from-Amazon-Linux-2)** Chạy một phiên bản web của VS Code trên instance EC2 sử dụng Amazon Linux 2.
+4. **[Triển Khai VS Code trên Amazon Linux 2](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/4.hosting-vs-code-on-ec2-from-amazon-linux-2/)** Chạy một phiên bản web của VS Code trên instance EC2 sử dụng Amazon Linux 2.
 
-5. **[Triển Khai VS Code Thủ Công trên EC2](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/5.manually-deploy-vs-code-on-ec2/)** Tự cài đặt và cấu hình VS Code hoặc Code Server trên một instance EC2 để phát triển.
+5. **[Triển Khai VS Code Thủ Công trên EC2](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/5.manually-deploy-vs-code-on-ec2/)** Tự cài đặt và cấu hình VS Code hoặc Code Server trên một instance EC2 để phát triển.
 
-6. **[Tạo AMI từ Instance](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/6.create-ami-from-instance-and-run-instance-from-that-ami/)** Học cách lưu cấu hình bằng cách tạo một AMI từ instance đã thiết lập và khởi chạy instance mới từ AMI đó.
+6. **[Tạo AMI từ Instance](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/6.create-ami-from-instance-and-run-instance-from-that-ami/)** Học cách lưu cấu hình bằng cách tạo một AMI từ instance đã thiết lập và khởi chạy instance mới từ AMI đó.
 
-7. **[Triển Khai VS Code bằng EC2 Image Builder](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/7.host-vscode-from-ami-from-ec2-image-builder/)** Sử dụng EC2 Image Builder để tự động hóa quá trình tạo AMI được cấu hình sẵn với VS Code hoặc Code Server.
+7. **[Triển Khai VS Code bằng EC2 Image Builder](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/7.host-vscode-from-ami-from-ec2-image-builder/)** Sử dụng EC2 Image Builder để tự động hóa quá trình tạo AMI được cấu hình sẵn với VS Code hoặc Code Server.
 
-8. **[Kết Nối VS Code với EC2 Riêng qua AWS Systems Manager](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/8.ssm-connect/)** Khai thác AWS Systems Manager để kết nối an toàn với các instance EC2 riêng mà không cần địa chỉ IP công cộng.
+8. **[Kết Nối VS Code với EC2 Riêng qua AWS Systems Manager](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/8.ssm-connect/)** Khai thác AWS Systems Manager để kết nối an toàn với các instance EC2 riêng mà không cần địa chỉ IP công cộng.
 
-9. **[Triển Khai Code Server trên EC2 với Phân Phối qua CloudFront](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/10.cloudfrontdistribution/)** Cài đặt Code Server trên EC2 và phân phối nó an toàn qua Amazon CloudFront.
+9. **[Triển Khai Code Server trên EC2 với Phân Phối qua CloudFront](https://thongnguyendt.github.io/Unlocking-Remote-AWS-Development-Using-VS-Code-with-EC2-An-Alternative-to-Cloud9/vi/10.cloudfrontdistribution/)** Cài đặt Code Server trên EC2 và phân phối nó an toàn qua Amazon CloudFront.
 
 ### Ai Nên Tham Gia?  
 Workshop này phù hợp với:  

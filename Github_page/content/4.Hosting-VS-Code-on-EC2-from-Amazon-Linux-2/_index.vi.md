@@ -1,5 +1,5 @@
 ---
-title: "Hosting VS Code trên EC2 từ Amazon Linux 2"
+title: "Hosting VS Code trên EC2 từ Amazon Linux 2 với CDK"
 date :  "`r Sys.Date()`" 
 weight : 4
 chapter : false
@@ -82,17 +82,24 @@ nvm install 16.0.0
 
 Từ link stack overflow trên sẽ dẫn tới link [glibc 2.27+ on Amazon Linux 2 | AWS re:Post (repost.aws)](https://repost.aws/questions/QUrXOioL46RcCnFGyELJWKLw/glibc-2-27-on-amazon-linux-2). Theo đó, ta biết việc nâng cấp phiên bản là không thể, mà downgrade NodeJS sẽ có thể gặp rủi ro thiếu thư viện hỗ trợ bất cứ khi nào web app triển khai ở phía sau được nâng cấp.
 
-## 3.3. Cài session-manager plugin
+## 3.3. Triển khai dự án với CDK
 
 tham khảo [Install the Session Manager plugin on Amazon Linux 2 and Red Hat Enterprise Linux distributions - AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-linux.html))
 
-### Bước 1: Cài session-managuer-plugin
+### Yêu cầu: trước tiên cần cài session-managuer-plugin
 
 ```
 sudo yum install -y [https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm](https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm)
 ```
 
 ![Untitled](/images/img_sec4/untitled%2056.png)
+
+
+### Bước 1: clone source code và chuyên thư mục làm việc vào đó
+
+```
+git clone https://github.com/aws-samples/vscode-on-ec2-for-prototyping && cd vscode-on-ec2-for-prototyping
+```
 
 ### Bước 2: Cài đặt project
 
