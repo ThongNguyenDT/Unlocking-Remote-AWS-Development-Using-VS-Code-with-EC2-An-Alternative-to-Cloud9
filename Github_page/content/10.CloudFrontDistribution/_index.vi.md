@@ -28,6 +28,9 @@ pre : " <b> 9. </b> "
 ![cloudfrontdistribution_6](/images/cloudfrontdistribution/cloudfrontdistribution_6.png)
 
 ### CloudFormation
+Link tải file: [code-server-stack.yaml](https://github.com/aws-samples/code-server-setup-with-cloudformation/blob/main/code-server-stack.yaml) 
+
+
 Mặc định, template được cung cấp hỗ trợ các khu vực sau:
 | Khu vực        | CloudFront Prefix List ID |
 |----------------|---------------------------|
@@ -176,4 +179,7 @@ aws ssm start-session \
 
 ![cloudfrontdistribution_22](/images/cloudfrontdistribution/cloudfrontdistribution_22.png)
 
+{{% notice note %}}
+Nội dung bài đăng được tham khảo từ bài viết: https://github.com/aws-samples/code-server-setup-with-cloudformation
 
+{{% /notice %}}

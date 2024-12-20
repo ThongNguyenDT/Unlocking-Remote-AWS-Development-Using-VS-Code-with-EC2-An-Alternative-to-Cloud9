@@ -30,6 +30,9 @@ pre : " <b> 9. </b> "
 ![cloudfrontdistribution_6](/images/cloudfrontdistribution/cloudfrontdistribution_6.png)
 
 ### CloudFormation
+
+Link download file: [code-server-stack.yaml](https://github.com/aws-samples/code-server-setup-with-cloudformation/blob/main/code-server-stack.yaml) 
+
 By default, the provided template supports the following regions:
 | Region        | CloudFront Prefix List ID |
 |----------------|---------------------------|
@@ -179,3 +182,7 @@ aws ssm start-session \
 ![cloudfrontdistribution_22](/images/cloudfrontdistribution/cloudfrontdistribution_22.png)
 
 
+{{% notice note %}}
+The content of the post is referenced from the article: https://github.com/aws-samples/code-server-setup-with-cloudformation
+
+{{% /notice %}}
